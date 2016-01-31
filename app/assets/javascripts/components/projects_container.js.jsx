@@ -16,6 +16,14 @@ var ProjectsContainer = React.createClass({
   },
 
   render() {
-    return <Projects projects={this.state.projects}/>
+    return(
+      <div>
+        <div className='well'>
+          <h4>{'Add new project'}</h4>
+          <ProjectsForm action='Create' />
+         </div>
+        <Projects projects={this.state.projects}/>
+      </div>
+    )
   }
 })

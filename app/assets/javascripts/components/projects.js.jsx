@@ -3,9 +3,9 @@ var Projects = React.createClass({
   render() {
     var createProject = (project) => <Project project={project} key={project.id} />
     return (
-      <ul>
+      <div>
         {this.props.projects.map(createProject)}
-      </ul>
+      </div>
     );
   }
 })
