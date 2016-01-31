@@ -12,6 +12,13 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails', '~> 3.1'
 end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'simplecov', require: false
+  gem 'shoulda'
+end
+
