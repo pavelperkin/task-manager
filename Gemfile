@@ -4,9 +4,10 @@ gem 'rails', '4.2.5.1'
 gem 'rails-api'
 gem 'pg'
 gem 'jbuilder'
+gem 'react-rails', '~> 1.5.0'
+gem 'jquery-rails'
 
 group :development do
-  gem 'pry-rails'
   gem 'quiet_assets'
   gem 'spring'
 end
