@@ -21,26 +21,7 @@ var Task = React.createClass({
         </a>
         <div className="collapse" id={taskId}>
           <div className="well">
-            <dl>
-              <dt>Description</dt>
-              <dd>{this.props.task.body}</dd>
-            </dl>
-            <dl>
-              <dt>Deadline</dt>
-              <dd>{this.props.task.deadline}</dd>
-            </dl>
-            <dl>
-              <dt>Priority</dt>
-              <dd>{this.props.task.priority}</dd>
-            </dl>
-            <dl>
-              <dt>Done?</dt>
-              <dd>{this.props.task.done}</dd>
-            </dl>
-            <dl>
-              <dt>Last update</dt>
-              <dd>{this.props.task.updated_at}</dd>
-            </dl>
+            <TasksForm task={this.props.task} action='Update' />
           </div>
         </div>
       </div>

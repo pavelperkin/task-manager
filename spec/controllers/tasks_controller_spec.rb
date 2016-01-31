@@ -5,7 +5,7 @@ RSpec.describe TasksController, type: :controller do
 
   describe "GET #index" do
     before do
-      get :index
+      get :index, project_id: project
     end
 
     it { expect(assigns(:tasks)).to eq([task]) }

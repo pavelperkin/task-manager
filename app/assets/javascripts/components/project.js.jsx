@@ -26,6 +26,7 @@ var Project = React.createClass({
         </div>
         <div className="panel-body">
           <Tasks project={this.props.project} tasksPath='/tasks' />
+          <TasksForm project={this.props.project} action='Create' />
         </div>
       </div>
     );

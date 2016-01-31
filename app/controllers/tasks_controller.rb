@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   before_action :set_task, only: [:show, :update, :destroy]
 
   def index
-    @tasks = Task.where(project_id: params[:project_id])
+    @tasks = Task.where(project_id: params[:project_id]).order(priority: :desc)
     render json: @tasks
   end
 

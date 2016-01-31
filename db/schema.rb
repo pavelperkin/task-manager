@@ -26,11 +26,11 @@ ActiveRecord::Schema.define(version: 20160131085258) do
     t.string   "title"
     t.text     "body"
     t.integer  "project_id"
-    t.string   "priority"
+    t.string   "priority",   default: "0"
     t.datetime "deadline"
     t.datetime "done"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end
