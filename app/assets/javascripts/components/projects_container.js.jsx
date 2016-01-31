@@ -1,7 +1,7 @@
 var ProjectsContainer = React.createClass({
   componentWillMount() {
     this.fetchProjects();
-    setInterval(this.fetchProjects, 1000)
+    setInterval(this.fetchProjects, 3000)
   },
 
   fetchProjects() {

@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   before_action :set_task, only: [:show, :update, :destroy]
 
   def index
-    @tasks = Task.all
+    @tasks = Task.where(project_id: params[:project_id])
     render json: @tasks
   end
 

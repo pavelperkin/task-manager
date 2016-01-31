@@ -11,7 +11,6 @@ var ProjectsForm = React.createClass({
   },
 
   handleSubmit(e) {
-    console.log(this)
     e.preventDefault();
     var title = this.state.title.trim();
     if (!title) { return }
@@ -23,7 +22,6 @@ var ProjectsForm = React.createClass({
       });
     }
     if(this.props.action == 'Create') {
-      alert('Create')
       $.post('/projects', {project: this.state }, function(data) {
         this.setState(this.getInitialState());
       }.bind(this), 'JSON' )
