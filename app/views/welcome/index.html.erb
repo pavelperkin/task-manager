@@ -7,5 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= react_component('ProjectsContainer', projectsPath: projects_path) %>
+  <div class="container">
+    <%= react_component('ProjectsContainer', projectsPath: projects_path) %>
+  </div>
 </body>

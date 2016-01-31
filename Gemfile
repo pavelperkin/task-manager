@@ -6,6 +6,7 @@ gem 'pg'
 gem 'jbuilder'
 gem 'react-rails', '~> 1.5.0'
 gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
 
 group :development do
   gem 'quiet_assets'
