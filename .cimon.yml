@@ -30,6 +30,7 @@ staging:
   prepare:
     - bundle install --path /bundle
     - bin/rake db:create db:migrate db:seed
+    - bin/rake assets:precompile
   service: rails
   dependencies: [postgresql]
   folder: /app
