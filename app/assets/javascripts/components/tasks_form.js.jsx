@@ -28,7 +28,9 @@ var TasksForm = React.createClass({
 
   handleSubmit(e) {
     e.preventDefault();
-
+    if(!this.state.project_id) {return}
+    if(!this.state.title) {return}
+    if(!this.state.body) {return}
     if(this.props.action == 'Update') {
       $.ajax({
          url: 'tasks/'+this.state.id,
