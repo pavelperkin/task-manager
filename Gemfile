@@ -13,6 +13,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.1'
+  gem 'pry-rails'
 end
 
 group :test do
@@ -20,5 +21,6 @@ group :test do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'simplecov', require: false
   gem 'shoulda'
+  gem "codeclimate-test-reporter", require: nil
 end
 
