@@ -24,6 +24,7 @@ test:
     - RAILS_ENV=test
     - RACK_ENV=test
     - DATABASE_URL=postgres://postgres:mysecretpassword@127.0.0.1:5432/db
+    - CODECLIMATE_REPO_TOKEN=d1306fcaaa71f675373c9dbdb225934b31e5e18bd326396e6d698257d8aec1c6
 
 staging:
   prepare:
@@ -39,4 +40,3 @@ staging:
     - RACK_ENV=production
     - DATABASE_URL=postgres://postgres:mysecretpassword@127.0.0.1:5432/db
     - PORT=80
-    - CODECLIMATE_REPO_TOKEN=d1306fcaaa71f675373c9dbdb225934b31e5e18bd326396e6d698257d8aec1c6
