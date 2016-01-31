@@ -33,6 +33,7 @@ staging:
   dependencies: [postgresql]
   folder: /app
   cmd: bin/rails s -p 80
+  port: 80
   env:
     - RAILS_ENV=production
     - RACK_ENV=production
