@@ -7,6 +7,8 @@ gem 'jbuilder'
 gem 'react-rails', '~> 1.5.0'
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
+gem 'execjs'
+gem 'therubyracer'
 
 group :development do
   gem 'quiet_assets'
