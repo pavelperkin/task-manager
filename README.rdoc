@@ -10,3 +10,4 @@ rails server
 
 rake db:test:prepare
 rspec -f d
+added hook for cimon
